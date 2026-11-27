@@ -1,0 +1,17 @@
+window,seed,policy,same_job_ids,all_complete,exact_work,exact_material,no_information_leak,common_hours
+2016-01-01,1834,huang,True,True,True,True,True,3504
+2016-01-01,1834,model,True,True,True,True,True,3504
+2016-01-01,2834,huang,True,True,True,True,True,4080
+2016-01-01,2834,model,True,True,True,True,True,4080
+2016-04-01,1834,huang,True,True,True,True,True,2016
+2016-04-01,1834,model,True,True,True,True,True,2016
+2016-04-01,2834,huang,True,True,True,True,True,2016
+2016-04-01,2834,model,True,True,True,True,True,2016
+2016-07-01,1834,huang,True,True,True,True,True,1464
+2016-07-01,1834,model,True,True,True,True,True,1464
+2016-07-01,2834,huang,True,True,True,True,True,1464
+2016-07-01,2834,model,True,True,True,True,True,1464
+2016-10-01,1834,huang,True,True,True,True,True,5880
+2016-10-01,1834,model,True,True,True,True,True,5880
+2016-10-01,2834,huang,True,True,True,True,True,5472
+2016-10-01,2834,model,True,True,True,True,True,5472

@@ -1,0 +1,12 @@
+{
+  "model_cases": 32,
+  "dispatched_jobs": 768,
+  "vessel_and_sequence_admission_passed": true,
+  "primary_frozen_hashes_passed": true,
+  "original_files_unchanged": 355,
+  "status_counts": {
+    "OPTIMAL": 3858,
+    "TIME_LIMIT": 9,
+    "EMPTY": 9
+  }
+}

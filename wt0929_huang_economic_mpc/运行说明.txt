@@ -1,0 +1,30 @@
+本文件保留原工作区运行记录。发布包的安装和复现步骤请优先阅读仓库根目录 REPRODUCE.md；原电脑绝对路径已由环境变量接口替代。
+
+首先打开 实验索引.html 或 经济滚动修订实验报告.docx。
+
+主实验：24 个固定工单场景，保留 Huang 基准、旧固定工单模型、经济滚动修订版三组。修订版沿用旧实验已冻结输入，不重新抽样。
+补充实验：4 个季节窗口乘两种几何布置，8 个配对场景。种子1834为邻近不同机位，2834为同机不同部件。
+每组每场景均完成24张相同工单，逐单有效工时和材料费一致，采用共同评价终点。
+
+本次优化修改位于独立目录，不修改 wt0929_release 原项目。旧固定工单数据在同级 wt0929_huang_fixed_workorders。
+修订版保留原代码候选生成，重写为14天经济滚动路线模式MILP，移除人工故障完工奖励和风险暴露奖励。材料费和总有效维修工时固定，在实际结果中完整计入。
+路径模式最多两个连续任务；原生WOMBAT执行航行、维修、天气等待和跨日续修。派工限制落实船舶、序列和序列最早启动时刻；预测施工和完工时刻属于近似，不是全部严格执行的逐时承诺。
+计划采用尾流修正功率的可加近似，实际发电在统一后处理中按同时停机状态重算。预测完工误差较大，详见 plan_execution_trace.csv，不应表述为精确时空模型已全面验证。
+
+目录：
+inputs：公开输入的适配副本、冻结工单、天气和预测功率缓存。
+runs/日期/种子/方法：原生事件 events.csv、逐时状态 operations.csv、派工 dispatch.csv、逐单完成 job_results.csv、每日计划 decisions.json、运行状态 status.json 和日志。
+summary：主实验三组绝对结果 runs.csv、均值 means.csv、聚类区间 paired_intervals.csv、逐时电量 hourly_energy.csv、公平性审计 equal_work_audit.csv、执行追踪 plan_execution_trace.csv、求解状态 solver_statuses.csv。
+summary_supplement：补充场景相同格式的结果。self_distance_corrections.csv 保存同机位零时长航段的原生无穷距离日志结算修正，两组处理一致，原始事件未修改。
+provisional_without_wake：接入预测功率缓存之前的试运行，不属于正式结论。
+
+复现环境：
+WOMBAT：同级 wt0929_huang2026_baseline/.venv/Scripts/python.exe。
+COPT：C:/conda/envs/stochos/python.exe，需可用许可证。
+报告：Codex bundled Python 环境与 python-docx。
+
+运行顺序：prepare_forecasts.py（模型Python）、prepare_supplement.py（模型Python）、run_batch.py（WOMBAT Python）、run_supplement.py（WOMBAT Python）、evaluate.py（模型Python）、evaluate.py --supplement（模型Python）、audit_execution.py（模型Python）、build_report.py（文档Python）。
+运行脚本会跳过已有且已全部完成的场景；输入与代码变更后若需完整重算，请另复制目录作为新实验再运行，保留当前正式结果。
+主实验旧模型组从同级 wt0929_huang_fixed_workorders 导入；Huang基准轨迹沿用同一冻结实验，并通过原生事件精确回放核查。
+
+注意：3秒限时求解的可行解不必然最优，间隙极大表示界不充分；修订版最后工单平均完工更晚，需要结合服务时限要求评估。当前结果不是原论文多年全场景复现，也不是原完整闭环代码的全部机制验证。

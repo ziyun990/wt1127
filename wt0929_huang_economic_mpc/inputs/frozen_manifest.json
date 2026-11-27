@@ -1,0 +1,23 @@
+[
+  {
+    "file": "jobs_834.csv",
+    "sha256": "190398474cd7f4ac708aa5b1162641a855a924ba80ba8b3fb2d56e3a300df2a0",
+    "jobs": 24,
+    "work_hours": 520,
+    "materials_eur": 350340.0
+  },
+  {
+    "file": "jobs_835.csv",
+    "sha256": "62c2d38b512816b04f4f7f8cc042134eb15250af4ae6ffad50f0cda73d812dbf",
+    "jobs": 24,
+    "work_hours": 564,
+    "materials_eur": 319120.0
+  },
+  {
+    "file": "jobs_836.csv",
+    "sha256": "96d423d2f2e9ba522afec71887767c2b733aebf287a4cacc4a760c69bc2066c5",
+    "jobs": 24,
+    "work_hours": 506,
+    "materials_eur": 61880.0
+  }
+]

@@ -1,0 +1,18 @@
+window,seed,policy,event_index,hour,additional,raw_distance,correct_distance_km,duration_hours
+2016-01-01,2834,huang,2644,3224.818238726844,traveling from a to a,inf,0,0
+2016-01-01,2834,huang,2653,3232.0444179394312,traveling from C5 to C5,inf,0,0
+2016-01-01,2834,huang,2714,3256.7430615301346,traveling from B1 to B1,inf,0,0
+2016-04-01,2834,huang,152,253.1381539476844,traveling from A7 to A7,inf,0,0
+2016-04-01,2834,huang,904,1065.9465334478648,traveling from y4 to y4,inf,0,0
+2016-04-01,2834,huang,1442,1598.9780848952466,traveling from a to a,inf,0,0
+2016-04-01,2834,huang,1521,1651.876088188959,traveling from C5 to C5,inf,0,0
+2016-04-01,2834,huang,1567,1672.1179274875485,traveling from B1 to B1,inf,0,0
+2016-04-01,2834,model,680,1047.6960175824731,traveling from C5 to C5,inf,0,0
+2016-07-01,2834,huang,133,204.3869024478043,traveling from A7 to A7,inf,0,0
+2016-07-01,2834,huang,897,1043.2516415831556,traveling from y4 to y4,inf,0,0
+2016-07-01,2834,huang,1269,1379.090474181278,traveling from C5 to C5,inf,0,0
+2016-07-01,2834,huang,1325,1404.13908537772,traveling from B1 to B1,inf,0,0
+2016-07-01,2834,model,1128,1431.696076251798,traveling from C5 to C5,inf,0,0
+2016-10-01,2834,huang,133,204.3869024478043,traveling from A7 to A7,inf,0,0
+2016-10-01,2834,huang,2029,2559.1179080215093,traveling from y4 to y4,inf,0,0
+2016-10-01,2834,huang,3159,3932.744429580464,traveling from C5 to C5,inf,0,0

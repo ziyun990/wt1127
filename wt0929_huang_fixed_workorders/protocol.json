@@ -1,0 +1,28 @@
+{
+  "windows": [
+    "2016-01-01",
+    "2016-04-01",
+    "2016-07-01",
+    "2016-10-01",
+    "2017-01-01",
+    "2017-04-01",
+    "2017-07-01",
+    "2017-10-01"
+  ],
+  "seeds": [
+    834,
+    835,
+    836
+  ],
+  "jobs_per_case": 24,
+  "release_days": 21,
+  "max_days": 365,
+  "lead_days": 7,
+  "initial_state": "healthy; fixed exogenous work orders; no endogenous new failures",
+  "pm_duration_ratio": 1,
+  "pm_material_ratio": 1,
+  "price_eur_mwh": 80,
+  "fuel_eur_hour": 400,
+  "design": "stratified constructed demand: 16 minor and 8 major; distinct turbines; uniform release days; no outcome selection",
+  "rul": "deterministic deadline known from information release; upper-information scheduling test, not predictor validation"
+}

@@ -1,0 +1,58 @@
+--- original/run_case.py
++++ published/run_case.py
+@@ -1,6 +1,7 @@
+ """Both dispatch policies execute through the same unmodified WOMBAT vessel processes."""
+ from pathlib import Path
+ import argparse,json,shutil,subprocess,sys,types
++from runtime_paths import solver_python, native_python
+ import numpy as np
+ import pandas as pd
+ import yaml
+@@ -33,7 +34,7 @@
+     byid={j['job_id']:j for j in jobs};requests={};complete={};worked={};dispatch=[];decisions=[]
+     rank=[];plan=[];worker=None;context=[None]
+     if policy=='model':
+-        worker=subprocess.Popen(['C:/conda/envs/stochos/python.exe',str(ROOT/'solver_worker.py')],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=(out/'solver_stderr.log').open('w'),text=True,encoding='utf-8',bufsize=1)
++        worker=subprocess.Popen([solver_python(),str(ROOT/'solver_worker.py')],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=(out/'solver_stderr.log').open('w'),text=True,encoding='utf-8',bufsize=1)
+     original_check=manager._is_request_processing
+     def eligible_check(self,request):
+         key=request.details.description
+--- original/run_batch.py
++++ published/run_batch.py
+@@ -1,12 +1,13 @@
+ from pathlib import Path
+ from concurrent.futures import ThreadPoolExecutor,as_completed
+-import json,subprocess,os
++import json,subprocess,os,sys
++from runtime_paths import solver_python, native_python
+ ROOT=Path(__file__).resolve().parent
+ def execute(job):
+     stamp,seed,policy=job
+     out=ROOT/'runs'/stamp/str(seed)/policy;out.mkdir(parents=True,exist_ok=True)
+-    if (out/'status.json').exists() and json.loads((out/'status.json').read_text())['complete']==24:return job
+-    cmd=[str(ROOT.parent/'wt0929_huang2026_baseline/.venv/Scripts/python.exe'),str(ROOT/'run_case.py'),stamp,str(seed),policy]
++    if '--force' not in sys.argv and (out/'status.json').exists() and json.loads((out/'status.json').read_text())['complete']==24:return job
++    cmd=[native_python(),str(ROOT/'run_case.py'),stamp,str(seed),policy]
+     with (out/'run.log').open('w',encoding='utf-8') as stream:
+         r=subprocess.run(cmd,stdout=stream,stderr=subprocess.STDOUT,env=dict(os.environ,PYTHONUTF8='1',OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1'))
+     assert r.returncode==0,(job,out/'run.log')
+--- original/run_supplement.py
++++ published/run_supplement.py
+@@ -1,13 +1,14 @@
+ from pathlib import Path
+ from concurrent.futures import ThreadPoolExecutor,as_completed
+-import json,subprocess,os
++import json,subprocess,os,sys
++from runtime_paths import solver_python, native_python
+ ROOT=Path(__file__).resolve().parent
+ cfg=json.loads((ROOT/'supplement_protocol.json').read_text())
+ def run(job):
+     w,s,p=job;out=ROOT/'runs'/w/str(s)/p;out.mkdir(parents=True,exist_ok=True)
+-    if (out/'status.json').exists() and json.loads((out/'status.json').read_text())['complete']==24:return job
++    if '--force' not in sys.argv and (out/'status.json').exists() and json.loads((out/'status.json').read_text())['complete']==24:return job
+     with (out/'run.log').open('w',encoding='utf-8') as stream:
+-        r=subprocess.run([str(ROOT.parent/'wt0929_huang2026_baseline/.venv/Scripts/python.exe'),str(ROOT/'run_case.py'),w,str(s),p],stdout=stream,stderr=subprocess.STDOUT,env=dict(os.environ,PYTHONUTF8='1',OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1'))
++        r=subprocess.run([native_python(),str(ROOT/'run_case.py'),w,str(s),p],stdout=stream,stderr=subprocess.STDOUT,env=dict(os.environ,PYTHONUTF8='1',OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1'))
+     assert r.returncode==0,(job,out/'run.log')
+     status=json.loads((out/'status.json').read_text());assert status['complete']==24,(job,status)
+     return job

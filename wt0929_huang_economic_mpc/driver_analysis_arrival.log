@@ -1,0 +1,12 @@
+ANALYZED 2016-01-01
+ANALYZED 2016-04-01
+ANALYZED 2016-07-01
+ANALYZED 2016-10-01
+ANALYZED 2017-01-01
+ANALYZED 2017-04-01
+ANALYZED 2017-07-01
+ANALYZED 2017-10-01
+         seed      lost_mwh  fault_wait_mwh  waiting_hours  reduction_weighted_wait_hours  repair_outage_span_hours  port_to_site_legs  site_to_port_legs  intra_site_legs  port_to_site_km  site_to_port_km  intra_site_km      total_km       fuel_eur     total_eur  no_work_outbound_trips  productive_outbound_trips  repair_increment_mwh
+policy                                                                                                                                                                                                                                                                                                                                         
+huang   835.0  66178.299208    20327.308042   25415.377968                    2717.303127               6219.194072         245.166667         248.166667        18.958333     12993.833333     13152.833333     132.290899  26278.957565  236491.698753  9.220287e+06              189.833333                  55.333333          45850.991167
+model   835.0  55431.280854    31137.784583   23528.020214                    4268.482767               3496.164297         150.208333         153.208333         2.000000      7961.041667      8120.041667      11.932283  16093.015616  144825.554504  8.268860e+06               95.958333                  54.250000          24293.496271

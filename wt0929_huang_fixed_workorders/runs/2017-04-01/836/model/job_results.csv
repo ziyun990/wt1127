@@ -1,0 +1,25 @@
+job_id,turbine,asset,mode,component,description,release_hour,failure_hour,required_hours,material_eur,reduction,severity,completion_hour,early_complete
+S836-J004,56,A7,15,main_shaft,Minor Repair,24,192,10,1000.0,0.0,1,513.1365082793366,False
+S836-J007,49,e,3,electrical_system,Major Repair,48,216,28,5000.0,0.5,2,957.0791033915773,False
+S836-J017,2,C5,8,yaw_system,Major Repair,48,216,40,3000.0,0.5,2,1483.2698443831157,False
+S836-J013,29,C2,0,power_converter,Minor Repair,120,288,14,1000.0,0.0,1,776.8317434583346,False
+S836-J011,50,h,12,direct_drive_generator,Major Repair,192,360,49,14340.0,0.5,2,1715.159032564989,False
+S836-J008,54,B1,6,ballast_pump,Minor Repair,216,384,8,1000.0,0.0,1,781.1923041102895,False
+S836-J015,62,G3,2,electrical_system,Minor Repair,216,384,10,1000.0,0.0,1,1098.6923748528488,False
+S836-J000,64,c,7,yaw_system,Minor Repair,240,408,10,500.0,0.0,1,1089.1377873799654,False
+S836-J018,10,C4,15,main_shaft,Minor Repair,240,408,10,1000.0,0.0,1,1099.9072316985857,False
+S836-J009,9,a,6,ballast_pump,Minor Repair,264,432,8,1000.0,0.0,1,956.1742697708188,False
+S836-J012,34,F7,6,ballast_pump,Minor Repair,264,432,8,1000.0,0.0,1,981.4368280575497,False
+S836-J002,14,i2,5,pitch_system,Major Repair,288,456,38,1900.0,0.5,2,1410.5767069957242,False
+S836-J003,41,z2,7,yaw_system,Minor Repair,288,456,10,500.0,0.0,1,787.4438711016076,False
+S836-J005,17,G6,5,pitch_system,Major Repair,336,504,38,1900.0,0.5,2,1410.5768951128155,False
+S836-J020,38,B2,11,direct_drive_generator,Minor Repair,336,504,13,1000.0,0.0,1,1260.1808793322487,False
+S836-J016,47,A2,3,electrical_system,Major Repair,360,528,28,5000.0,0.5,2,1410.4535407370556,False
+S836-J021,40,f,7,yaw_system,Minor Repair,360,528,10,500.0,0.0,1,1161.1688822026615,False
+S836-J022,31,g,2,electrical_system,Minor Repair,384,552,10,1000.0,0.0,1,1169.8038749263656,False
+S836-J019,20,D2,5,pitch_system,Major Repair,408,576,38,1900.0,0.5,2,1481.234086335388,False
+S836-J014,15,s6,12,direct_drive_generator,Major Repair,456,624,49,14340.0,0.5,2,1717.0955703603643,False
+S836-J023,57,D7,11,direct_drive_generator,Minor Repair,456,624,13,1000.0,0.0,1,1360.4259216989176,False
+S836-J001,59,E5,0,power_converter,Minor Repair,480,648,14,1000.0,0.0,1,1245.749896609569,False
+S836-J006,39,D1,7,yaw_system,Minor Repair,480,648,10,500.0,0.0,1,1090.1919765231419,False
+S836-J010,11,E3,13,mooring_line,Minor Repair,480,648,40,1500.0,0.0,1,1483.1885477401568,False

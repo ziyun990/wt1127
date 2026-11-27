@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv*/
+.env
+*.key
+*.lic
+report_preview*/
+provisional_without_wake/
+**/runs/**/library/

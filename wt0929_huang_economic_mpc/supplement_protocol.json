@@ -1,0 +1,27 @@
+{
+  "windows": [
+    "2016-01-01",
+    "2016-04-01",
+    "2016-07-01",
+    "2016-10-01"
+  ],
+  "variants": [
+    {
+      "seed": 1834,
+      "scope": "nearby distinct turbines",
+      "sha256": "ffa057d114696c51c9ddd52dbfa2235f44b436acfd8a0f08de243cd8a7039a99",
+      "jobs": 24,
+      "work_hours": 520,
+      "materials_eur": 350340.0
+    },
+    {
+      "seed": 2834,
+      "scope": "two different components per turbine",
+      "sha256": "a7ab3e21602d17206f770ec107a7996c13bfe1f62564510b593e6c45a604951d",
+      "jobs": 24,
+      "work_hours": 520,
+      "materials_eur": 350340.0
+    }
+  ],
+  "decision": "fixed geometry variants; no outcome selection; secondary evidence only"
+}

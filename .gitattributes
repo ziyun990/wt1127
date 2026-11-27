@@ -1,0 +1,2 @@
+# Preserve exact publication bytes so hashes survive checkout on Windows/Linux.
+* -text

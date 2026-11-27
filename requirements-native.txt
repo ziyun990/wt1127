@@ -1,0 +1,10 @@
+wombat==0.12.2
+numpy==2.3.4
+pandas==2.3.3
+scipy==1.17.1
+PyYAML==6.0.4
+attrs==26.1.0
+simpy==4.1.1
+networkx==3.6.1
+polars==1.34.0
+pyarrow==21.0.0

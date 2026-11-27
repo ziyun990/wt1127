@@ -1,0 +1,15 @@
+{
+  "experiment": "wt0929_huang_economic_mpc",
+  "primary_cases": 24,
+  "supplement_cases": 8,
+  "published_native_trajectories": 64,
+  "old_control_trajectories": 24,
+  "omitted": [
+    "duplicated per-run generated library",
+    "__pycache__",
+    "provisional_without_wake",
+    "report rendering PNGs"
+  ],
+  "portability": "runtime interpreter paths only; scientific optimization unchanged",
+  "upstream": "https://github.com/NatLabRockies/WAVES/tree/cc843037e5f1d2a2513ecfbef9e6cd93a17fcc30"
+}

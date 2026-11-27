@@ -1,0 +1,12 @@
+{
+  "exact_match": true,
+  "events": 1361,
+  "columns": [
+    "env_time",
+    "action",
+    "reason",
+    "duration",
+    "distance_km",
+    "materials_cost"
+  ]
+}

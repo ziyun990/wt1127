@@ -1,0 +1,25 @@
+job_id,turbine,asset,mode,component,description,release_hour,failure_hour,required_hours,material_eur,reduction,severity,completion_hour,early_complete
+S834-J017,56,A7,4,pitch_system,Minor Repair,0,168,18,500.0,0.0,1,253.13732061435107,False
+S834-J001,47,A2,11,direct_drive_generator,Minor Repair,24,192,13,1000.0,0.0,1,251.19218022558195,False
+S834-J002,5,A5,14,buoyancy_module,Replacement,72,240,40,100000.0,1.0,3,1652.7592029993205,False
+S834-J015,9,a,0,power_converter,Minor Repair,72,240,14,1000.0,0.0,1,466.13556515477904,False
+S834-J023,1,B5,13,mooring_line,Minor Repair,96,264,40,1500.0,0.0,1,1314.5766506696984,False
+S834-J020,13,G1,4,pitch_system,Minor Repair,120,288,18,500.0,0.0,1,755.5189482566136,False
+S834-J008,23,y4,4,pitch_system,Minor Repair,144,312,18,500.0,0.0,1,497.4323659199015,False
+S834-J019,2,C5,7,yaw_system,Minor Repair,144,312,10,500.0,0.0,1,472.1920878329771,False
+S834-J004,18,B4,3,electrical_system,Major Repair,168,336,28,5000.0,0.5,2,1067.8784315713438,False
+S834-J016,54,B1,7,yaw_system,Minor Repair,192,360,10,500.0,0.0,1,472.1920638348935,False
+S834-J022,25,G7,0,power_converter,Minor Repair,192,360,14,1000.0,0.0,1,740.7924858945212,False
+S834-J013,0,B6,3,electrical_system,Major Repair,240,408,28,5000.0,0.5,2,1052.5904728740193,False
+S834-J012,44,D6,8,yaw_system,Major Repair,288,456,40,3000.0,0.5,2,1305.0771151597694,False
+S834-J005,53,H4,14,buoyancy_module,Replacement,312,480,40,100000.0,1.0,3,1289.9049596067034,False
+S834-J018,48,C1,6,ballast_pump,Minor Repair,336,504,8,1000.0,0.0,1,1077.5035924965723,False
+S834-J003,22,s1,9,rotor_blades,Minor Repair,360,528,18,5000.0,0.0,1,1018.8335961947299,False
+S834-J006,65,b,6,ballast_pump,Minor Repair,360,528,8,1000.0,0.0,1,756.1390562499136,False
+S834-J021,12,E2,14,buoyancy_module,Replacement,360,528,40,100000.0,1.0,3,1677.0779664748134,False
+S834-J000,26,F6,2,electrical_system,Minor Repair,384,552,10,1000.0,0.0,1,1002.6199979743428,False
+S834-J010,43,E7,6,ballast_pump,Minor Repair,384,552,8,1000.0,0.0,1,996.5060101041053,False
+S834-J011,60,D5,2,electrical_system,Minor Repair,408,576,10,1000.0,0.0,1,1017.8020229600031,False
+S834-J009,58,C6,12,direct_drive_generator,Major Repair,432,600,49,14340.0,0.5,2,1696.7696558470413,False
+S834-J007,57,D7,15,main_shaft,Minor Repair,456,624,10,1000.0,0.0,1,978.6920168360756,False
+S834-J014,45,F5,3,electrical_system,Major Repair,456,624,28,5000.0,0.5,2,1068.8985901386511,False

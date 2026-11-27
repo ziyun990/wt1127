@@ -1,0 +1,5 @@
+        jobs_completed  work_hours  material_eur  early_started  early_completed     total_eur      lost_mwh  sailing_hours  finish_hour
+policy                                                                                                                                  
+huang             24.0       520.0      350340.0          0.000              0.0  1.142335e+07  85136.512125     685.707214  2648.972911
+model             24.0       520.0      350340.0          4.125              2.5  9.675101e+06  64759.291250     390.524180  3230.288040
+ALL EQUAL-WORK AND EXECUTION-ADMISSION AUDITS PASSED 16
